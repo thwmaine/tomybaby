@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para Você 💜</title>
+    <title>for you 💜</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -213,9 +213,9 @@
 
         .tap-text {
             margin-top: 24px;
-            font-size: 16px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: lowercase;
             color: #c9a0dc;
             animation: pulse 2s ease-in-out infinite;
         }
@@ -273,9 +273,10 @@
 
         .heart-text {
             font-family: 'Poppins', sans-serif;
-            font-weight: 500;
-            font-size: clamp(22px, 6vw, 36px);
+            font-weight: 400;
+            font-size: clamp(16px, 4vw, 24px);
             color: #e8d5f5;
+            letter-spacing: 1px;
         }
 
         /* ── Message Section ── */
@@ -286,8 +287,8 @@
 
         .message-title {
             font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            font-size: clamp(32px, 8vw, 56px);
+            font-weight: 500;
+            font-size: clamp(22px, 5vw, 36px);
             background: linear-gradient(135deg, #c9a0dc, #ffb6c1, #c9a0dc);
             background-size: 200% 200%;
             -webkit-background-clip: text;
@@ -314,9 +315,9 @@
         }
 
         .typed-text {
-            font-size: clamp(15px, 4vw, 18px);
+            font-size: clamp(13px, 3.5vw, 15px);
             line-height: 1.8;
-            min-height: 120px;
+            min-height: 80px;
             color: rgba(255, 255, 255, .9);
         }
 
@@ -343,8 +344,8 @@
 
         .reasons-title {
             font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            font-size: clamp(28px, 7vw, 44px);
+            font-weight: 500;
+            font-size: clamp(20px, 5vw, 32px);
             color: #c9a0dc;
             margin-bottom: 32px;
         }
@@ -359,9 +360,9 @@
             background: rgba(155, 89, 182, .08);
             border: 1px solid rgba(201, 160, 220, .12);
             border-radius: 16px;
-            padding: 16px 20px;
-            margin-bottom: 14px;
-            font-size: clamp(14px, 3.8vw, 17px);
+            padding: 14px 18px;
+            margin-bottom: 12px;
+            font-size: clamp(12px, 3.5vw, 14px);
             opacity: 0;
             transform: translateX(-30px);
             transition: all 0.5s ease;
@@ -385,10 +386,11 @@
 
         .surprise-btn {
             position: relative;
-            padding: 18px 48px;
+            padding: 14px 40px;
             font-family: 'Poppins', sans-serif;
-            font-weight: 500;
-            font-size: 20px;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 1px;
             color: #fff;
             background: linear-gradient(135deg, #9b59b6, #c9a0dc);
             border: none;
@@ -413,20 +415,6 @@
             border-radius: 50px;
             z-index: -1;
             animation: shimmer 3s ease-in-out infinite;
-        }
-
-        .final-message {
-            display: none;
-            margin-top: 40px;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            font-size: clamp(36px, 10vw, 64px);
-            background: linear-gradient(135deg, #9b59b6, #c9a0dc, #ffb6c1);
-            background-size: 200% 200%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: fadeInUp 1s ease, shimmer 3s ease-in-out infinite 1s;
         }
 
         @keyframes fadeInUp {
@@ -558,8 +546,8 @@
 
         .photocards-title {
             font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            font-size: clamp(28px, 7vw, 44px);
+            font-weight: 500;
+            font-size: clamp(20px, 5vw, 32px);
             color: #c9a0dc;
             margin-bottom: 40px;
         }
@@ -724,7 +712,7 @@
     <!-- 0 · Intro -->
     <section id="intro">
         <div class="envelope">💌</div>
-        <p class="tap-text">toque para abrir</p>
+        <p class="tap-text">touch to open</p>
     </section>
 
     <!-- 1 · Heart -->
@@ -735,13 +723,13 @@
             <div class="heart-ring"></div>
             <div class="big-heart" id="bigHeart">💜</div>
         </div>
-        <p class="heart-text">Meu coração bate por você</p>
+        <p class="heart-text">hey baby, scroll it down pls, ily</p>
         <div class="scroll-arrow visible" onclick="scrollToSection('message-section')">⬇</div>
     </section>
 
     <!-- 2 · Message -->
     <section id="message-section">
-        <h1 class="message-title">Uma cartinha para você...</h1>
+        <h1 class="message-title">a few words</h1>
         <div class="love-letter">
             <p class="typed-text" id="typedText"></p>
             <span class="cursor-blink" id="cursorBlink"></span>
@@ -751,71 +739,43 @@
 
     <!-- 3 · Reasons -->
     <section id="reasons-section">
-        <h2 class="reasons-title">Motivos que eu te amo 💜</h2>
+        <h2 class="reasons-title">i love u bc</h2>
         <ul class="reasons-list" id="reasonsList">
-            <li class="reason-item"><span class="emoji">🦋</span>Seu sorriso ilumina meu dia inteiro</li>
-            <li class="reason-item"><span class="emoji">🌙</span>Cada momento com você é mágico</li>
-            <li class="reason-item"><span class="emoji">💜</span>Você me faz ser uma pessoa melhor</li>
-            <li class="reason-item"><span class="emoji">🦋</span>Seu abraço é meu lugar favorito</li>
-            <li class="reason-item"><span class="emoji">⭐</span>Você é a estrela mais bonita do meu céu</li>
-            <li class="reason-item"><span class="emoji">🌙</span>Sua risada é minha música favorita</li>
-            <li class="reason-item"><span class="emoji">💜</span>Você me inspira todos os dias</li>
-            <li class="reason-item"><span class="emoji">🦋</span>Eu te escolheria em todas as vidas</li>
+            <li class="reason-item">placeholder reason one</li>
+            <li class="reason-item">placeholder reason two</li>
+            <li class="reason-item">placeholder reason three</li>
+            <li class="reason-item">placeholder reason four</li>
         </ul>
         <div class="scroll-arrow" id="reasonsArrow" onclick="scrollToSection('photocards-section')">⬇</div>
     </section>
 
     <!-- 4 · Photocards -->
     <section id="photocards-section">
-        <h2 class="photocards-title">Nossos momentos 💜</h2>
+        <h2 class="photocards-title">eleanor's photocards</h2>
         <div class="fan-container" id="fanContainer">
             <div class="photocard" data-idx="0">
                 <div class="photocard-bg" style="background: linear-gradient(135deg, #2d1b3d, #4a2d6b);"></div>
-                <div class="photocard-placeholder">🦋<span class="photocard-placeholder-text">foto 1</span></div>
-                <div class="photocard-caption">
-                    <div class="caption-title">Nosso primeiro encontro</div>
-                    <div class="caption-sub">um dia especial</div>
-                </div>
+                <div class="photocard-placeholder"><span class="photocard-placeholder-text">photo 1</span></div>
             </div>
             <div class="photocard" data-idx="1">
                 <div class="photocard-bg" style="background: linear-gradient(135deg, #3d1b4a, #5b2d7b);"></div>
-                <div class="photocard-placeholder">💜<span class="photocard-placeholder-text">foto 2</span></div>
-                <div class="photocard-caption">
-                    <div class="caption-title">Aquele sorriso lindo</div>
-                    <div class="caption-sub">meu favorito</div>
-                </div>
+                <div class="photocard-placeholder"><span class="photocard-placeholder-text">photo 2</span></div>
             </div>
             <div class="photocard" data-idx="2">
                 <div class="photocard-bg" style="background: linear-gradient(135deg, #2d1b3d, #6b2d5a);"></div>
-                <div class="photocard-placeholder">🌙<span class="photocard-placeholder-text">foto 3</span></div>
-                <div class="photocard-caption">
-                    <div class="caption-title">Juntos sempre</div>
-                    <div class="caption-sub">pra sempre</div>
-                </div>
+                <div class="photocard-placeholder"><span class="photocard-placeholder-text">photo 3</span></div>
             </div>
             <div class="photocard" data-idx="3">
                 <div class="photocard-bg" style="background: linear-gradient(135deg, #4a1b3d, #5b2d6b);"></div>
-                <div class="photocard-placeholder">⭐<span class="photocard-placeholder-text">foto 4</span></div>
-                <div class="photocard-caption">
-                    <div class="caption-title">Minha estrela</div>
-                    <div class="caption-sub">brilha mais que todas</div>
-                </div>
+                <div class="photocard-placeholder"><span class="photocard-placeholder-text">photo 4</span></div>
             </div>
             <div class="photocard" data-idx="4">
                 <div class="photocard-bg" style="background: linear-gradient(135deg, #2d1b4a, #4a2d7b);"></div>
-                <div class="photocard-placeholder">🦋<span class="photocard-placeholder-text">foto 5</span></div>
-                <div class="photocard-caption">
-                    <div class="caption-title">Nosso lugar</div>
-                    <div class="caption-sub">onde tudo faz sentido</div>
-                </div>
+                <div class="photocard-placeholder"><span class="photocard-placeholder-text">photo 5</span></div>
             </div>
             <div class="photocard" data-idx="5">
                 <div class="photocard-bg" style="background: linear-gradient(135deg, #3d1b3d, #6b2d6b);"></div>
-                <div class="photocard-placeholder">💜<span class="photocard-placeholder-text">foto 6</span></div>
-                <div class="photocard-caption">
-                    <div class="caption-title">I Purple You</div>
-                    <div class="caption-sub">pra sempre</div>
-                </div>
+                <div class="photocard-placeholder"><span class="photocard-placeholder-text">photo 6</span></div>
             </div>
         </div>
         <div class="scroll-arrow" id="photocardsArrow" onclick="scrollToSection('surprise-section')">⬇</div>
@@ -823,15 +783,13 @@
 
     <!-- 5 · Surprise -->
     <section id="surprise-section">
-        <button class="surprise-btn" id="surpriseBtn">💜 Toque aqui, meu amor 💜</button>
-        <div class="final-message" id="finalMsg">I Purple You 💜</div>
+        <button class="surprise-btn" id="surpriseBtn">there's something else for you</button>
     </section>
 
     <script>
         const CONFIG = {
-            loveMessage: `Meu amor,\n\nVocê é a melhor coisa que aconteceu na minha vida. Cada dia ao seu lado é um presente que eu nunca vou deixar de agradecer.\n\nVocê me faz sorrir sem motivo, me faz querer ser melhor, e faz meu coração bater mais forte só de pensar em você.\n\nObrigado por existir e por ser essa pessoa incrível que você é. Eu te amo mais do que qualquer código poderia expressar. 💜`,
-            typingSpeed: 45,
-            finalMessage: "I Purple You 💜"
+            loveMessage: `(your message goes here — you'll send it to me later)`,
+            typingSpeed: 45
         };
 
         // ═══════════════════════════════════════
@@ -1126,16 +1084,9 @@
 
         document.getElementById('surpriseBtn').addEventListener('click', e => {
             burstHearts(e.clientX, e.clientY);
-            setTimeout(() => burstHearts(e.clientX - 60, e.clientY - 40), 300);
-            setTimeout(() => burstHearts(e.clientX + 60, e.clientY + 40), 600);
-            document.getElementById('surpriseBtn').style.display = 'none';
-            const msg = document.getElementById('finalMsg');
-            msg.textContent = CONFIG.finalMessage;
-            msg.style.display = 'block';
-
-            for (let i = 0; i < 30; i++) {
-                setTimeout(() => spawnFloatingElement(), i * 100);
-            }
+            setTimeout(() => {
+                window.open('surprise.html', '_blank');
+            }, 600);
         });
 
         let audio = null;
