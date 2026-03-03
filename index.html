@@ -761,15 +761,12 @@
                 <div class="photocard-bg" style="background-image: url('photos/4.png');"></div>
             </div>
             <div class="photocard" data-idx="2">
-                <div class="photocard-bg" style="background-image: url('photos/6.png');"></div>
-            </div>
-            <div class="photocard" data-idx="3">
                 <div class="photocard-bg" style="background-image: url('photos/5.png');"></div>
             </div>
-            <div class="photocard" data-idx="4">
+            <div class="photocard" data-idx="3">
                 <div class="photocard-bg" style="background-image: url('photos/2.png');"></div>
             </div>
-            <div class="photocard" data-idx="5">
+            <div class="photocard" data-idx="4">
                 <div class="photocard-bg" style="background-image: url('photos/1.png');"></div>
             </div>
         </div>
@@ -1008,9 +1005,9 @@
             const cards = container.querySelectorAll('.photocard');
             const total = cards.length;
 
-            const angles  = [-14, -8, -2, 3, 8, 14];
-            const yShifts = [ 18,  6,  0, 0, 8, 20];
-            const zIndexes = [ 1,  2,  3, 4, 3,  2];
+            const angles  = [-14, -7, 0, 7, 14];
+            const yShifts = [ 16,  4, 0, 4, 16];
+            const zIndexes = [ 1,  2, 3, 2,  1];
 
             const containerW = container.offsetWidth;
             const cardW = cards[0].offsetWidth;
